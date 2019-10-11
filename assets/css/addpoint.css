@@ -1,0 +1,622 @@
+.uk-close:after{
+    display: none!important;
+}
+
+.ploader{
+    display: block;
+    margin: auto;
+	padding: 50px;
+	box-sizing:border-box;
+}
+.tbltreeAjax{
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+	margin-bottom: 0;
+    padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+    justify-content: space-between;
+	background:#fafafa;
+	border-top: 1px solid #ccc;
+}
+
+ul.tbltreeAjax li{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 1;
+    margin: 4px;
+	width: calc(100% /7);
+	border: 1px dotted #fff;
+}
+ul.tbltreeAjax li:hover{
+	border: 1px dotted #f26522;
+}
+ul.tbltreeAjax li:hover .dayhead{
+	background: #eee;
+	
+}
+
+.offreceptAjax{
+    
+    text-align: center;
+    font-size: 13px;
+    
+	border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    margin: 0 auto;
+}
+.noreceptAjax{
+    padding: 10px;
+    font-size: 14px;
+	background-color: #eee;
+    text-align: center;
+    text-decoration: none;
+	border-bottom: 1px solid #ccc;
+}
+.receptAjax{
+    font-size: 14px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+	
+}
+.receptAjax:last-child,
+.noreceptAjax:last-child{
+	border-bottom: none;
+}
+.receptAjax a{
+  /*
+  display: block;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 -1px rgb(113, 114, 115);
+  text-decoration: none;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(33,43,52,1);
+  border-radius: 3px;
+  background: rgb(81,92,102) linear-gradient(rgb(81,92,102), rgb(69,78,87));
+  box-sizing: border-box;
+  box-shadow:
+   inset 0 1px rgba(101,114,126,1),
+   inset 0 0 1px rgba(140,150,170,.8),
+   0 1px rgb(83,94,104),
+   0 0 1px rgb(86,96,106);
+   */
+   
+   
+	font-weight: bold;
+	color: #ecf7ec;
+	text-decoration: none;
+	text-shadow: 0 -1px rgb(113, 114, 115);
+	padding: 10px;
+	display: block;
+	box-sizing: border-box;
+	background: #3f9f3f;
+	box-shadow: inset 0 2px rgb(79, 168, 79), inset 0 0 2px rgb(72, 189, 72), 0 2px rgb(42, 106, 42), 0 0 2px rgb(38, 102, 38);
+}
+.receptAjax a:hover{
+	/*border: 1px solid rgb(22,32,43);
+  border-bottom: 1px solid rgb(25,34,45);
+  background: rgb(53,61,71);
+  box-shadow:
+   inset 0 1px 3px rgba(0,10,20,.5),
+   0 1px rgb(83,94,104),
+   0 0 1px rgb(86,96,106);*/
+	color: #fff;
+	background: #3a973a;
+	text-decoration:none;
+	box-shadow: inset 0 2px rgb(42, 106, 42), rgb(38, 102, 38), 0 2px rgb(79, 168, 79), 0 0 2px inset 0 0 2px rgb(72, 189, 72);
+}
+.noreceptAjax.yesrecept{
+    color: #FFF;
+	background: #E65858;
+}
+
+p.nameprice {
+    padding: 0;
+    margin: 0;
+    font-size: 9px;
+    color: green;
+}
+.nav_week{
+    font-size: 16px;
+}
+div.pricezap {
+    color: green;
+    font-size: 11px;
+}
+.weekNavigation {
+	display: flex; 
+	list-style: none; 
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 15px; 
+	padding-right: 15px;
+	justify-content: space-between;
+}
+.dayhead {
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.tdvtAjax.past .dayhead{
+	color:#acacac;
+}
+.tdvtAjax:last-child .dayhead{
+	background: #e65858;
+	color: #fff;
+}
+.tdvtAjax:hover:last-child .dayhead{
+	background: #c84545;
+}
+.dayname{
+    padding-bottom: 4px;
+    
+}
+.day{
+    
+}
+
+.adpoint{}
+
+.adpoint, .uk-modal-container .uk-modal-dialog{
+    width: fit-content!important;
+}
+.uk-modal-header{
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+	border-radius: 4px 4px 0 0;
+	background: #fafafa;
+	margin-bottom:0!important;
+}
+
+.icon_back {
+	width: 20px;
+    height: 20px;
+    background: url(/images/icons/icon-next.svg);
+	transform: rotate(180deg);
+    display: block;
+}
+.icon_next {
+    width: 20px;
+    height: 20px;
+    background: url(/images/icons/icon-next.svg);
+    display: block;
+}
+
+/*Третий шаг, внесение своих данных*/
+div.pricezap2{
+    text-align: center;
+    color: green;
+    font-size: 16px;
+    background: #f4f6f7;
+    padding: 10px 15px;
+	width: calc(100% / 3);
+	box-sizing: border-box;
+}
+
+div.addclient.info_order_block {
+    display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.addclient {
+    padding: 10px;
+/*    background: #ebebeb;*/
+    margin: 5px 0 15px 0;
+}
+
+div.cantd {
+    text-align: right;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 5px;
+}
+div.order_desc_block.spec_block{
+	float:left;
+	width:70%;
+	box-sizing: border-box;
+}
+div.order_desc_block.image_block {
+    display: inline-block;
+	width: 30%;
+	float: left;
+	margin: 0;
+	text-align: center;
+	padding: 0 15px 15px 0;
+	box-sizing: border-box;
+}
+
+div.spec_images {
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+}
+
+.photovt {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.buttons-block{
+	padding: 15px 0;
+}
+.canlink {
+	background: none;
+	border: none;
+	text-decoration: underline;
+	color: rgb(242, 101, 34);
+}
+.canlink:hover {
+	text-decoration: none;
+	color: rgb(174, 80, 35);
+}
+
+div.order_page_block_time {
+    background: #f4f6f7;
+	padding: 10px 15px;
+	text-align: center;
+	font-size:16px;
+	width: calc(100% / 3);
+	box-sizing: border-box;
+}
+div.order_page_block{padding: 0 15px;}
+div.order_page_block input.senbutt{
+    width: auto;
+    border: none;
+    background: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.order_page_block input.senbutt:hover {
+    background: red;
+}
+
+.dop_text, .pricezap{
+    display:none;
+}
+
+
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.block {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #60a839;
+
+
+}
+
+h4.spec_list_title{
+    margin-bottom: 0px;
+}
+ul.spec_list{
+    margin: 5px;
+}
+
+/*.adpointWrapper {
+    position: fixed;
+    z-index: 999;
+    height: 2em;
+    max-width: 500px;
+    overflow: visible;
+    margin: auto;
+    top: -60%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    width: fit-content;
+}
+
+!* Transparent Overlay *!
+.adpointWrapper:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+}*/
+.adpointContainer{
+    background: white;
+    margin: auto;
+}
+.uk-modal-apd {
+    padding: 0 !important;
+}
+.adpoint-close{
+    position: absolute;
+    top: -24px;
+    color: white;
+    opacity: 1;
+    right: -24px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+	font-size: 1.3em;
+}
+
+/*Страница талона*/
+.status_1{
+    margin-bottom: 5px;
+}
+
+.summa_succ{
+    margin: 5px 0;
+}
+.time_dadta_s{
+    border-top: solid #ccc 2px;
+    padding: 10px;
+    border-bottom: solid #ccc 2px;
+    margin: 0;
+}
+.maininfo_success_title{
+	padding: 15px;
+	margin: 15px 0;
+	background: #f4f4f4;
+}
+.mainpage_successpagettfsp span.label{
+	font-weight:600;
+}
+.mainpage_successpagettfsp{
+    padding: 20px;
+}
+.office_success p, .specialist_name_success p{
+    margin-bottom: 5px;
+}
+.countClose{
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    margin: 10px 0;
+    padding-left: 0px;
+
+}
+.payAction:disabled{
+    border: 1px solid #f26522;
+    background: none;
+    color: #f26522;
+}
+
+.addclient_page .fiospec{
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0px auto 15px auto;
+    padding: 0 0 5px;
+    text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+
+.addclient_page .skill br{
+    display: none;
+}
+
+#ttfspForm .user-button-wrapper{
+    margin-left: 0px;
+    padding-left: 0;
+}
+
+.user-button:hover{
+    cursor: pointer;
+}
+.user-button-wrapper input{
+    margin-top: 10px;
+}
+.user-button {
+    -webkit-appearance: none;
+    margin: 0 0 5px 0;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: #666;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 12px;
+    background: #f7f7f7;
+    vertical-align: middle;
+    line-height: 28px;
+    min-height: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.3);
+    background-origin: border-box;
+    background-image: -webkit-linear-gradient(top,#fff,#eee);
+    background-image: linear-gradient(to bottom,#fff,#eee);
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #fff;
+}
+.retpaym{
+	padding: 0 20px;
+}
+.user-button-success {
+    color: #ecf7ec;
+	padding: 0 35px;
+	text-decoration: none;
+	box-sizing: border-box;
+	background: #3f9f3f;
+	/*box-shadow: inset 0 2px rgb(79, 168, 79), inset 0 0 2px rgb(72, 189, 72), 0 2px rgb(42, 106, 42), 0 0 2px rgb(38, 102, 38);*/
+}
+.user-button-success:hover{
+	color: #fff;
+	background: #3a973a;
+	text-decoration:none;
+	/*box-shadow: inset 0 2px rgb(42, 106, 42), rgb(38, 102, 38), 0 2px rgb(79, 168, 79), 0 0 2px inset 0 0 2px rgb(72, 189, 72);*/
+	
+}
+.user-button-primary {
+    background-color: #009dd8;
+    color: #fff;
+    background-image: -webkit-linear-gradient(top,#00b4f5,#008dc5);
+    background-image: linear-gradient(to bottom,#00b4f5,#008dc5);
+    border-color: rgba(0,0,0,.2);
+    border-bottom-color: rgba(0,0,0,.4);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+}
+.user-button-primary:hover{
+	color:#fff;
+	text-decoration:none;
+}
+.addclient_page{
+    border-top: solid #ccc 1px;
+    padding: 20px;
+}
+/*Скрытие специализации доктора */
+.addclient_page .spec, .mainpage_successpagettfsp .specialisations_name_success{
+    display: none;
+}
+
+@media (max-width: 767px) {
+	div.addclient.info_order_block{width:100%;box-sizing: border-box;}
+	.adpointContainer>div{}
+	div.spec_images{padding:0;margin:0;}
+	
+	div.order_page_block_time,
+	div.pricezap2{
+		padding: 0 15px;
+		width:100%;
+	}
+    .tbltreeAjax{
+        flex-direction: column;
+    }
+	.receptAjax a{
+		padding: 10px 0;
+		height: 100%;
+	}
+    .dayhead{
+        padding: 4px;
+		margin: 0;
+    }
+	.offreceptAjax{
+		padding:10px;
+		border-bottom:none;
+	}
+	
+	.noreceptAjax, .receptAjax{
+		float: left;
+        width: 25%;
+		height: 34px;
+		box-sizing: border-box;
+    }
+    .noreceptAjax {
+        padding: 10px 0;
+		/*box-shadow: inset 0 2px rgb(215, 79, 79), inset 0 0 2px rgb(162, 51, 51), 0 2px rgb(183, 49, 49), 0 0 2px rgb(164, 59, 59);*/
+		
+    }
+	.noreceptAjax,
+	.receptAjax:last-child, 
+	.noreceptAjax:last-child{
+		border-bottom: 1px solid #ccc;
+	}
+    
+
+    ul.tbltreeAjax li{
+        margin: 12px 0px;
+		width:100%;
+		background: #eee;
+		box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+    }
+    .adpoint-close{
+        top: 3px;
+		right: 3px;
+		color: #666;
+		padding: 5px;
+    }
+
+    .modalAdpoint  div.uk-modal-header{
+        margin: -20px 0px 0px 0px!important;
+    }
+    .modalAdpoint .uk-modal-apd{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .adpointWrapper{
+        overflow: auto;
+    }
+    .adpoint{
+        min-width: 275px;
+    }
+    .retpm_butt{
+        text-align: center;
+        display: inline-block;
+    }
+}
+@media (max-width: 570px) {
+	
+	.docName{
+		width: 100%;
+		display: block;
+	}
+	div.order_desc_block.spec_block{
+		width:100%;
+	}
+	
+    .dayhead{
+        margin-bottom: 0;
+        padding: 4px 8px;
+    }
+
+    .nav_week>a{
+        text-align: center;
+        display: inline-block;
+    }
+
+    div.order_desc_block.image_block {
+        display: block;
+        width: auto;
+        float: none;
+        text-align: center;
+		margin-bottom: 10px;
+    }
+
+    .user-button-wrapper div{
+        text-align: center;
+    }
+    .uk-modal-header{
+        text-align: center;
+    }
+    .time_dadta_s, .number_success_title{
+        text-align: center;
+    }
+    .number_success_title span, .time_dadta_s span{
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .qrCode{
+        display: none!important;;
+    }
+	
+
+}
+@media (max-width: 470px) {
+    .nav_week{
+        font-size: 14px;
+    }
+	
+    
+}

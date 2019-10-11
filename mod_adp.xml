@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.1.0" method="install">
+    <name>Модуль вывода докторов</name>
+    <author>Сорокин Александр</author>
+    <creationDate>19.07.2019</creationDate>
+    <copyright>Copyright (C) 2019 All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>web@dobro-clinic.com</authorEmail>
+    <authorUrl>onco-center.clinic</authorUrl>
+    <version>3.5.0</version>
+    <description>MOD_ADP_XML_DESCRIPTION</description>
+    <files >
+        <filename module="mod_adp">mod_adp.php</filename>
+        <folder>tmpl</folder>
+		<folder>assets</folder>
+        <filename>index.html</filename>
+        <filename>mod_adp.xml</filename>
+        <filename>helper.php</filename>
+    </files>
+    <config>
+        <fields name="params"> <!-- здесь можно указать параметры -->
+            <fieldset name="basic">
+                <field name="idDoc"  type="text" default="0"
+                       label="Введите целое число ID Доктора"
+                       description="Из компонента Запись на прием выбрать ID доктора" />	<!-- дадим пользователю выбрать фразу-приветствие в настройках плагина -->
+                <field name="fio" type="text" default=""
+                       label="Введите ФИО"
+                       description="Введите сокращенное имя напр. Коляда Н.В. необходимо для рендера заголовка в расписании - Записаться на прием к доктору Коляда Н.В."
+/>
+            </fieldset>
+        </fields>
+    </config>
+
+
+</extension>
